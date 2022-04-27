@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.news {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    background-image: url(./images/photo.jpeg);
+    background-size: cover;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.comment {
+    color: #9AA439;
+}
+
+.text {
+    position: absolute;
+    bottom: -13px;
+    transition: .5s;
+}
+
+.news:hover {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.555)), url(./images/photo.jpeg);
+}
+
+.news:hover .text {
+    bottom: 0;
+}
